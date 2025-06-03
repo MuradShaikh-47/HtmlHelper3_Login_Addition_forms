@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+
+   <div class="container-main">
+       <div class="forms">
+           <h1>Login</h1>
+
+           @using (Html.BeginForm())
+            {
+              <div class="row">
+                  <label>
+                      Username:
+                  </label>
+
+                  @Html.TextBox("txtUsername", "", new { PlaceHolder = "Enter Username", @class="textboxx"})
+              </div>
+              <div class="row">
+                  <label>
+                      Password:
+                  </label>
+
+                  @Html.TextBox("txtPassword","", new {PlaceHolder="Enter Password", @class="textboxx"})
+              </div>
+
+              <div class="row">
+                  <input type="submit" value="Login" class="btn"/>
+                  <input type="submit" value="Reset" class="btn"/>
+              </div>
+            }
+       </div>
+       <div class="forms">
+           <h1>Addition</h1>
+
+           @using (Html.BeginForm())
+           {
+               <div class="row">
+                   <label>
+                       Enter First Number: 
+                   </label>
+
+                   @Html.TextBox("txtFirstNumber", "", new { PlaceHolder = "Enter first number", @class = "textboxx" })
+               </div>
+               <div class="row">
+                   <label>
+                       Enter Second Number:
+                   </label>
+
+                   @Html.TextBox("txtSecondNumber", "", new { PlaceHolder = "Enter Second Number", @class = "textboxx" })
+               </div>
+
+               <div class="row">
+                   <input type="submit" value="Sum" class="btn" />
+                   <input type="submit" value="Reset" class="btn" />
+               </div>
+           }
+       </div>
+   </div>
+
+</body>
+</html>
