@@ -13,5 +13,15 @@ namespace HtmlHelper3.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Addition()
+        {
+            return View();
+        }
     }
 }
