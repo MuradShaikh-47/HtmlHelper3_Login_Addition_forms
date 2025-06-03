@@ -18,7 +18,7 @@
        <div class="forms">
            <h1>Login</h1>
 
-           @using (Html.BeginForm())
+           @using (Html.BeginForm("Login","Default",FormMethod.Post))
             {
               <div class="row">
                   <label>
@@ -44,7 +44,7 @@
        <div class="forms">
            <h1>Addition</h1>
 
-           @using (Html.BeginForm())
+           @using (Html.BeginForm("Addition","Default",FormMethod.Post))
            {
                <div class="row">
                    <label>
